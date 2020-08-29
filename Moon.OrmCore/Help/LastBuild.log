@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.8.0" projectFile="C:\Moon\Moon.Orm\Moon.Orm.shfbproj" started="2013-10-27 16:52:37">
+<buildStep step="Initializing">
+Finding tools...
+Found Sandcastle tools in &#39;E:\Program Files\Sandcastle\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;E:\Program Files\HTML Help Workshop\&#39;
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\Moon\Moon.Orm\Moon.Orm.csproj
+    Found project &#39;C:\Moon\Moon.Orm\Moon.Orm.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;C:\Moon\Moon.Orm\bin\Debug\Moon.Orm.dll&#39;
+SHFB: Warning BE0007: A project with a different or higher framework version was found.  Changing project FrameworkVersion property from &#39;.NET Framework 4.0&#39; to &#39;.NET Framework 2.0&#39; for the build.
+
+References to include (excluding framework assemblies):
+    None
+
+Copying XML comments files
+    C:\Moon\Moon.Orm\bin\Debug\Moon.Orm.xml -&gt; C:\Moon\Moon.Orm\Help\Working\Moon.Orm.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (zh-CN, 中文(简体，中国))...
+SHFB: Warning BE0003: Sandcastle shared content for the &#39;zh-CN, 中文(简体，中国)&#39; language could not be found.  Using &#39;en-US, English (US)&#39; defaults.
+    Last step completed in 00:00:00.2969
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0625
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[E:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+  MRefBuilder (v2.7.4.0)
+  Copyright ? 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright ? 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Loaded 1 assemblies for reflection and 0 dependency assemblies.
+  Info: Wrote information on 1 namespaces, 27 types, and 294 members
+  XslTransform (v2.7.4.0)
+  Copyright ? 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright ? 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Applying XSL transformation &#39;E:\Program Files\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
+    Last step completed in 00:00:05.8438
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0469
+</buildStep>
+<buildStep step="ApplyVisibilityProperties">
+Applying visibility properties to reflection information file
+    0 attribute nodes removed
+    0 explicit interface implementations removed
+    12 local and base class EII elements removed
+    Last step completed in 00:00:00.1250
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[E:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+  XslTransform (v2.7.4.0)
+  Copyright ? 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright ? 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Applying XSL transformation &#39;E:\Program Files\Sandcastle\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Info: Applying XSL transformation &#39;E:\Program Files\Sandcastle\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2.7.4.0)
+  Copyright ? 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright ? 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Applying XSL transformation &#39;E:\Program Files\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+    Last step completed in 00:00:04.9219
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0156
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0156
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[E:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+  XslTransform (v2.7.4.0)
+  Copyright ? 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright ? 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Applying XSL transformation &#39;E:\Program Files\Sandcastle\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:01.4219
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:02.1719
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\Moon\Moon.Orm\Help\Working\sandcastle.config
+    Last step completed in 00:00:00.3750
+</buildStep>
+<buildStep step="BuildReferenceTopics">
+Building reference help topics...
+[E:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+  BuildAssembler (v2.7.4.0)
+  Copyright ? 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright ? 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Loading configuration...
+  Info: Processing topics...
+  Warn: ShowMissingComponent: [N:Moon.Orm] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.CreateDefaultDb] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.ExecuteProToOwnList``1(System.String,System.Data.Common.DbParameter[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.ExecuteProWithNonQuery(System.String,System.Data.Common.DbParameter[])] Missing &lt;param name=&quot;parameters&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.ExecuteSqlToOwnList``1(System.String)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.ExecuteSqlToOwnList``1(System.String,System.Object[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.ExecuteSqlWithNonQuery(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.GetDataSet``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.GetEntities``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.GetEntity``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.GetOwnList``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.GetRemoveParametersSQL(Moon.Orm.WhereExpression)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Db.Remove``1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DbAdoMethod.#ctor(System.String)] Missing &lt;param name=&quot;linkString&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DbAdoMethod.CreateCommandBuilder] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DbAdoMethod.CreateConnection] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DbAdoMethod.CreateDataAdapter] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DbAdoMethod.CreateDataSourceEnumerator] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DbAdoMethod.CreateDbCommand] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DbAdoMethod.CreateParameter] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.CompileCodeToAssembly(System.String,Moon.Orm.Db,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.CompileToResults(System.String,System.String[],System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.GenerateModelAndModelListsGetMethodCode(System.String,Moon.Orm.Db,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.GenerateModelAndModelListsGetMethodCode(System.String,Moon.Orm.Db,System.String)] Missing &lt;param name=&quot;sql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.GenerateModelAndModelListsGetMethodCode(System.String,Moon.Orm.Db,System.String)] Missing &lt;param name=&quot;db&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.GenerateModelAndModelListsGetMethodCode(System.String,Moon.Orm.Db,System.String)] Missing &lt;param name=&quot;modelName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.GenerateModelCode(System.String,Moon.Orm.Db,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.GenerateModelCode(System.String,Moon.Orm.Db,System.String)] Missing &lt;param name=&quot;sql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.GenerateModelCode(System.String,Moon.Orm.Db,System.String)] Missing &lt;param name=&quot;db&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.DynamicListelper.GenerateModelCode(System.String,Moon.Orm.Db,System.String)] Missing &lt;param name=&quot;modelName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.EntityBase.CreateEntity``1(System.Data.IDataRecord)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.EntityBase.CreateEntity``1(System.Data.IDataRecord)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.EntityBase.GetPrimaryKeyInfo] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.EntityBase.GetPropertyValue``1(System.String)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.EntityBase.GetPropertyValue``1(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.EntityBase.SetDataRecordToEntity(System.Data.IDataRecord)] Missing &lt;param name=&quot;record&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.AS(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.AS(System.String)] Missing &lt;param name=&quot;Name&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Avg] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Between``1(``0,``0)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Between``1(``0,``0)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Between``1(``0,``0)] Missing &lt;param name=&quot;v1&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Between``1(``0,``0)] Missing &lt;param name=&quot;v2&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.BiggerThan(Moon.Orm.FieldBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.BiggerThan(Moon.Orm.FieldBase)] Missing &lt;param name=&quot;field&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.BiggerThan(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.BiggerThan(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.BiggerThanOrEqual(Moon.Orm.FieldBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.BiggerThanOrEqual(Moon.Orm.FieldBase)] Missing &lt;param name=&quot;field&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.BiggerThanOrEqual(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.BiggerThanOrEqual(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Count] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Equal(Moon.Orm.FieldBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Equal(Moon.Orm.FieldBase)] Missing &lt;param name=&quot;field&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Equal(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Equal(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Equal(System.Object)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Exists(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Exists(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(System.Int32[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(System.Int64[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(System.Int64[])] Missing &lt;param name=&quot;values&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(System.String[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(System.UInt32[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(System.UInt32[])] Missing &lt;param name=&quot;values&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(System.UInt64[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.In(System.UInt64[])] Missing &lt;param name=&quot;values&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Max] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Min] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotEqual(Moon.Orm.FieldBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotEqual(Moon.Orm.FieldBase)] Missing &lt;param name=&quot;field&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotEqual(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotEqual(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotEqual(System.Object)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotEqual(System.Object)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.Int32[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.Int32[])] Missing &lt;param name=&quot;values&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.Int64[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.Int64[])] Missing &lt;param name=&quot;values&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.String[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.UInt32[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.UInt32[])] Missing &lt;param name=&quot;values&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.UInt64[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.NotIn(System.UInt64[])] Missing &lt;param name=&quot;values&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.SmallerThan(Moon.Orm.FieldBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.SmallerThan(Moon.Orm.FieldBase)] Missing &lt;param name=&quot;field&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.SmallerThan(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.SmallerThan(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.SmallerThanOrEqual(Moon.Orm.FieldBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.SmallerThanOrEqual(Moon.Orm.FieldBase)] Missing &lt;param name=&quot;field&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.SmallerThanOrEqual(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.SmallerThanOrEqual(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.FieldBase.Sum] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.GlobalData.ExistDynamicListHandlerInMap(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.HighJoinMQL.ToSQLExpression] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.HighJoinMQL.Union(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.HighJoinMQL.Union(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.HighJoinMQL.UnionAll(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.HighJoinMQL.UnionAll(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.JoinMQL.ON(Moon.Orm.WhereExpression)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.JoinMQL.ON(Moon.Orm.WhereExpression)] Missing &lt;param name=&quot;expression&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.JoinMQL.Where(Moon.Orm.WhereExpression)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.JoinMQL.Where(Moon.Orm.WhereExpression)] Missing &lt;param name=&quot;expression&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MObject.IsNull] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MObject.To``1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MObject.To``1] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MObject.ToString] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [T:Moon.Orm.MoonCache`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MoonCache`1.GetCacheBySql``1(System.String)] Missing &lt;typeparam name=&quot;TResult&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MoonCache`1.GetCacheBySql``1(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MoonCache`1.GetCacheBySql``1(System.String)] Missing &lt;param name=&quot;sql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MoonCache`1.RemoveSqlCache(System.String)] Missing &lt;param name=&quot;sql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MoonCache`1.SaveCache(System.String,System.Object)] Missing &lt;param name=&quot;sql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MoonCache`1.SaveCache(System.String,System.Object)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [T:Moon.Orm.MoonFastInvoker`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.CreateOneObject] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.FullJoin(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.FullJoin(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.GroupBy(Moon.Orm.FieldBase[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.GroupBy(Moon.Orm.FieldBase[])] Missing &lt;param name=&quot;fields&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Having(Moon.Orm.WhereExpression)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Having(Moon.Orm.WhereExpression)] Missing &lt;param name=&quot;expression&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.InnerJoin(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.InnerJoin(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.LeftJoin(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.LeftJoin(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.OrderByASC(Moon.Orm.FieldBase[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.OrderByASC(Moon.Orm.FieldBase[])] Missing &lt;param name=&quot;fields&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.OrderByDESC(Moon.Orm.FieldBase[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.OrderByDESC(Moon.Orm.FieldBase[])] Missing &lt;param name=&quot;fields&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.RightJoin(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.RightJoin(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Select(Moon.Orm.FieldBase[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Select(Moon.Orm.FieldBase[])] Missing &lt;param name=&quot;fields&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.ToDebugSQL] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Top(System.Int32)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Top(System.Int32)] Missing &lt;param name=&quot;count&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Top(System.Int64)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Top(System.Int64)] Missing &lt;param name=&quot;count&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.ToParametersSQL] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.ToSQLExpression] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.ToSQLExpressionStringBuilder] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Union(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Union(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.UnionAll(Moon.Orm.MQLBase)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.UnionAll(Moon.Orm.MQLBase)] Missing &lt;param name=&quot;mql&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Where(Moon.Orm.WhereExpression)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MQLBase.Where(Moon.Orm.WhereExpression)] Missing &lt;param name=&quot;expression&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MySql.#ctor(System.String)] Missing &lt;param name=&quot;linkString&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MySql.ExecuteProToOwnList``1(System.String,System.Data.Common.DbParameter[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MySql.ExecuteProWithNonQuery(System.String,System.Data.Common.DbParameter[])] Missing &lt;param name=&quot;parameters&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MySql.ExecuteSqlToOwnList``1(System.String,System.Object[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MySql.GetDataSet``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MySql.GetEntities``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.MySql.GetOwnList``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Oracle.#ctor(System.String)] Missing &lt;param name=&quot;linkString&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Oracle.ExecuteProToOwnList``1(System.String,System.Data.Common.DbParameter[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Oracle.ExecuteProWithNonQuery(System.String,System.Data.Common.DbParameter[])] Missing &lt;param name=&quot;parameters&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Oracle.ExecuteSqlToOwnList``1(System.String,System.Object[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Oracle.GetDataSet``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Oracle.GetEntities``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.Oracle.GetOwnList``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.SqlServer.#ctor(System.String)] Missing &lt;param name=&quot;linkString&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.SqlServer.ExecuteProToOwnList``1(System.String,System.Data.Common.DbParameter[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.SqlServer.ExecuteProWithNonQuery(System.String,System.Data.Common.DbParameter[])] Missing &lt;param name=&quot;parameters&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.SqlServer.ExecuteSqlToOwnList``1(System.String,System.Object[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.SqlServer.GetDataSet``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.SqlServer.GetEntities``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.SqlServer.GetOwnList``1(Moon.Orm.MQLBase)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.TableAttribute.#ctor(System.String,Moon.Orm.DbType)] Missing &lt;param name=&quot;tableName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Moon.Orm.TableAttribute.#ctor(System.String,Moon.Orm.DbType)] Missing &lt;param name=&quot;dbType&quot;/&gt; documentation
+  Info: Processed 409 topic(s)
+  Info: 175 warning(s)
+  Diagnostic: CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 8 of 15.
+  Diagnostic: CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
+  Diagnostic: ResolveReferenceLinksComponent2: New MSDN content ID cache size: 38 entries
+    Last step completed in 00:00:45.0469
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0625
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[E:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+Sandcastle Help File Builder, version 1.9.8.0
+Copyright ? 2006-2013, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;2052&#39;, code page &#39;936&#39;, encoding charset &#39;gb2312&#39;.
+
+Processing Help 1 files in C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1
+Processed 409 HTML files
+Sorting keywords and generating See Also indices
+Saving HTML Help 1 keyword index to C:\Moon\Moon.Orm\Help\Working\Moon.Orm 5.0帮助文档.hhk
+Saving HTML Help 1 table of contents to C:\Moon\Moon.Orm\Help\Working\Moon.Orm 5.0帮助文档.hhc
+    Last step completed in 00:00:05.6094
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\adm.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\adm.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\adm_arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\adm_arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\adm_dev.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\adm_dev.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\adm_dev_arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\adm_dev_arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\alert_caution.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\alert_caution.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\alert_note.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\alert_note.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\alert_security.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\alert_security.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\big_adm.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\big_adm.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\big_arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\big_arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\big_dev.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\big_dev.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\big_kw.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\big_kw.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\box.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\box.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\Caution.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\Caution.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\CFW.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\CFW.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\collall.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\collall.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\collapse.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\collapse.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\collapse_all.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\collapse_all.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\copycode.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\copycode.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\copycodeHighlight.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\copycodeHighlight.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\dev.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\dev.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\dev_arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\dev_arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\dropdown.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\dropdown.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\dropdownHover.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\dropdownHover.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\drpdown.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\drpdown.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\drpdown_orange.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\drpdown_orange.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\drpdown_orange_up.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\drpdown_orange_up.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\drpup.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\drpup.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\exp.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\exp.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\expall.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\expall.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\expand_all.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\expand_all.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\filter1a.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\filter1a.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\filter1c.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\filter1c.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\footer.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\footer.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\gradient.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\gradient.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\greencheck.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\greencheck.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\greychck.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\greychck.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\header_prev_next.jpg -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\header_prev_next.jpg
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_blank.jpg -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\header_sql_tutorial_blank.jpg
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_logo.GIF -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\header_sql_tutorial_logo.GIF
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\kw.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\kw.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\kw_adm.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\kw_adm.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\kw_adm_arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\kw_adm_arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\kw_adm_dev.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev_arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\kw_adm_dev_arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\kw_arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\kw_arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\kw_dev.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\kw_dev.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\kw_dev_arch.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\kw_dev_arch.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\LastChild.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\LastChild.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\load.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\load.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\load_hover.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\load_hover.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\note.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\note.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pencil.GIF -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pencil.GIF
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privclass.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privclass.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privdelegate.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privdelegate.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privenum.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privenum.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privenumeration.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privenumeration.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privevent.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privevent.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privextension.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privextension.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privfield.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privfield.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privinterface.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privinterface.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privmethod.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privmethod.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privproperty.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privproperty.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\privstructure.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\privstructure.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protclass.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protclass.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protdelegate.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protdelegate.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protenum.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protenum.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protenumeration.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protenumeration.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protevent.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protevent.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protextension.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protextension.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protfield.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protfield.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protinterface.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protinterface.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protmethod.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protmethod.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protoperator.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protoperator.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protproperty.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protproperty.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\protstructure.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\protstructure.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubclass.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubclass.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubdelegate.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubdelegate.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubenum.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubenum.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubenumeration.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubenumeration.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubevent.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubevent.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubextension.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubextension.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubfield.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubfield.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubinterface.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubinterface.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubmethod.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubmethod.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\puboperator.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\puboperator.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubproperty.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubproperty.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\pubstructure.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\pubstructure.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\requirements1a.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\requirements1a.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\requirements1c.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\requirements1c.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\save.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\save.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\save_hover.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\save_hover.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\security.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\security.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\seealso1a.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\seealso1a.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\seealso1c.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\seealso1c.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\slMobile.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\slMobile.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\static.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\static.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\icons\xna.gif -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\icons\xna.gif
+E:\Program Files\Sandcastle\\Presentation\VS2005\scripts\CheckboxMenu.js -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\scripts\CheckboxMenu.js
+E:\Program Files\Sandcastle\\Presentation\VS2005\scripts\CommonUtilities.js -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\scripts\CommonUtilities.js
+E:\Program Files\Sandcastle\\Presentation\VS2005\scripts\Dropdown.js -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\scripts\Dropdown.js
+E:\Program Files\Sandcastle\\Presentation\VS2005\scripts\EventUtilities.js -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\scripts\EventUtilities.js
+E:\Program Files\Sandcastle\\Presentation\VS2005\scripts\script_feedBack.js -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\scripts\script_feedBack.js
+E:\Program Files\Sandcastle\\Presentation\VS2005\scripts\script_manifold.js -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\scripts\script_manifold.js
+E:\Program Files\Sandcastle\\Presentation\VS2005\scripts\SplitScreen.js -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\scripts\SplitScreen.js
+E:\Program Files\Sandcastle\\Presentation\VS2005\styles\Presentation.css -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\styles\Presentation.css
+E:\Program Files\Sandcastle\\Presentation\VS2005\styles\Whidbey\Presentation.css -&gt; C:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\styles\Whidbey\Presentation.css
+    Last step completed in 00:00:02.4844
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating HTML Help 1 table of contents file...
+    Last step completed in 00:00:00.0156
+</buildStep>
+<buildStep step="GenerateHelpFileIndex">
+Generating HTML Help 1 index file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+    Last step completed in 00:00:00.0313
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[E:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling c:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\Moon.Orm 5.0帮助文档.chm
+  
+  
+  
+  
+  
+  Compile time: 0 minutes, 12 seconds
+  
+  411	Topics
+  
+  5,925	Local links
+  
+  1,281	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created c:\Moon\Moon.Orm\Help\Working\Output\HtmlHelp1\Moon.Orm 5.0帮助文档.chm, 683,739 bytes
+  
+  Compression decreased file by 4,752,622 bytes.
+  
+    Last step completed in 00:00:17.8906
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.7031
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 10-27-2013 04:54 下午.  Total time: 00:01:28.2969
+
+</buildStep>
+</shfbBuild>

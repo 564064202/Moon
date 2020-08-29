@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Moon.Orm\FieldBase.cs">
+    <Files>
+      <File FileName="Moon.Orm\DbAdoMethod.cs" Line="24" Column="4" />
+      <File FileName="Moon.Orm\EntityBase.cs" Line="45" Column="5" />
+      <File FileName="Moon.Orm\MQLBase.cs" Line="30" Column="32" />
+      <File FileName="Moon.Orm\FieldType.cs" Line="11" Column="17" />
+      <File FileName="Moon.Orm\FieldBase.cs" Line="7" Column="2" />
+      <File FileName="Moon.Orm\DbType.cs" Line="17" Column="8" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

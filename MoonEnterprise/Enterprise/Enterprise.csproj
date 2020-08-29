@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{B7832FE2-C0FB-44C7-BD8D-DEA5AD1EAC21}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Enterprise</RootNamespace>
+    <AssemblyName>Enterprise</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ApplicationIcon>..\m.ico</ApplicationIcon>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWin32Manifest>False</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Moon.Orm">
+      <HintPath>..\..\Moon.Net\Qin.Orm\Qin.Orm\bin\Debug\Moon.Orm.dll</HintPath>
+    </Reference>
+    <Reference Include="MoonDB">
+      <HintPath>C:\MoonDB.dll</HintPath>
+    </Reference>
+    <Reference Include="SkinFramework">
+      <HintPath>C:\Documents and Settings\qinshichuan\桌面\SkinFramework\bin\Debug\SkinFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs" />
+    <Compile Include="DbHelper\DataBase.cs" />
+    <Compile Include="FormSqliteHelperDialog.cs" />
+    <Compile Include="FormSqliteHelperDialog.Designer.cs">
+      <DependentUpon>FormSqliteHelperDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAllEntities.cs" />
+    <Compile Include="FrmAllEntities.Designer.cs">
+      <DependentUpon>FrmAllEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditCell.cs" />
+    <Compile Include="FrmEditCell.Designer.cs">
+      <DependentUpon>FrmEditCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntity.cs" />
+    <Compile Include="FrmEntity.Designer.cs">
+      <DependentUpon>FrmEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGCode.cs" />
+    <Compile Include="FrmGCode.Designer.cs">
+      <DependentUpon>FrmGCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHelpSetLinkStringDialog.cs" />
+    <Compile Include="FrmHelpSetLinkStringDialog.Designer.cs">
+      <DependentUpon>FrmHelpSetLinkStringDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs" />
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgress.cs" />
+    <Compile Include="FrmProgress.Designer.cs">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSet.cs" />
+    <Compile Include="Lib.cs" />
+    <Compile Include="Lib\Tool.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLInfoEnumerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAllEntities.resx">
+      <DependentUpon>FrmAllEntities.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditCell.resx">
+      <DependentUpon>FrmEditCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntity.resx">
+      <DependentUpon>FrmEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGCode.resx">
+      <DependentUpon>FrmGCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHelpSetLinkStringDialog.resx">
+      <DependentUpon>FrmHelpSetLinkStringDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgress.resx">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <None Include="Scripts\jquery-1.4.4.js" />
+    <None Include="Scripts\jquery-1.4.4.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <None Include="Scripts\jquery.validate.js" />
+    <None Include="Scripts\jquery.validate.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DbHelper" />
+    <Folder Include="Lib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

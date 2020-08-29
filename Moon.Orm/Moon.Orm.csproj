@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{4F7BCBA1-FD24-4D78-B933-6777523EFBF8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Moon.Orm</RootNamespace>
+    <AssemblyName>Moon.Orm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <DocumentationFile>bin\Debug\Moon.Orm.xml</DocumentationFile>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE;RELEASE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;RELEASE</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DocumentationFile>bin\Debug\Moon.Orm.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Moon.Orm.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>None</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.3.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\sqlite\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ados\AdoMysql.cs" />
+    <Compile Include="Ados\AdoOracle.cs" />
+    <Compile Include="Ados\AdoSharedDb.cs" />
+    <Compile Include="Ados\AdoSqlite.cs" />
+    <Compile Include="Ados\AdoSqlServer.cs" />
+    <Compile Include="Ados\DbAdoMethod.cs" />
+    <Compile Include="Cache\MoonCache.cs" />
+    <Compile Include="DataStructs\DbType.cs" />
+    <Compile Include="DataStructs\DictionaryList.cs" />
+    <Compile Include="DataStructs\EntityBase.cs" />
+    <Compile Include="DataStructs\EnumDescriptionAttribute.cs" />
+    <Compile Include="DataStructs\FieldAttribute.cs" />
+    <Compile Include="DataStructs\FieldBase.cs" />
+    <Compile Include="DataStructs\FieldType.cs" />
+    <Compile Include="DataStructs\HighJoinMQL.cs" />
+    <Compile Include="DataStructs\JObjectDictionary.cs" />
+    <Compile Include="DataStructs\JoinMQL.cs" />
+    <Compile Include="DataStructs\MObject.cs" />
+    <Compile Include="DataStructs\MQLBase.cs" />
+    <Compile Include="DataStructs\Pager.cs" />
+    <Compile Include="DataStructs\PrimaryKeyType.cs" />
+    <Compile Include="DataStructs\CheckResultData.cs" />
+    <Compile Include="DataStructs\TableAttribute.cs" />
+    <Compile Include="DataStructs\TablesPrimaryKeyAttribute.cs" />
+    <Compile Include="DataStructs\UnionMQL.cs" />
+    <Compile Include="DataStructs\WhereExpression.cs" />
+    <Compile Include="Dbs\Db.cs" />
+    <Compile Include="Dbs\MySql.cs" />
+    <Compile Include="Dbs\Oracle.cs" />
+    <Compile Include="Dbs\SharedDb.cs" />
+    <Compile Include="Dbs\Sqlite.cs" />
+    <Compile Include="Dbs\SqlServer.cs" />
+    <Compile Include="Dynamic\DynamicListelper.cs" />
+    <Compile Include="Dynamic\DynamicListHandler.cs" />
+    <Compile Include="EmitFastInvokers\MoonFastInvoker.cs" />
+    <Compile Include="EmitFastInvokers\MoonFastInvoker2.cs" />
+    <Compile Include="GlobalData.cs" />
+    <Compile Include="SqlConfig.cs" />
+    <Compile Include="SqlXml.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CacheUtil.cs" />
+    <Compile Include="Util\CloneUtil.cs" />
+    <Compile Include="Util\DataTableUtil.cs" />
+    <Compile Include="Util\DbUtil.cs" />
+    <Compile Include="Util\EnumUtil.cs" />
+    <Compile Include="Util\IOUtil.cs" />
+    <Compile Include="Util\JsonUtil.cs" />
+    <Compile Include="Util\ListUtil.cs" />
+    <Compile Include="Util\LogUtil.cs" />
+    <Compile Include="Util\ModelUtil.cs" />
+    <Compile Include="Util\OrmResourceUtil.cs" />
+    <Compile Include="Util\PagerUtil.cs" />
+    <Compile Include="Util\SecurityUtil.cs" />
+    <Compile Include="Util\SqlConfigUtil.cs" />
+    <Compile Include="Util\StringUtil.cs" />
+    <Compile Include="Util\TypeUtil.cs" />
+    <Compile Include="Util\UrlUtil.cs" />
+    <Compile Include="XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="sql.config" />
+    <None Include="sql.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="OrmResource.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

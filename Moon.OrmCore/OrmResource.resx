@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ajaxscripts" xml:space="preserve">
+    <value>var pageNav = pageNav || {};
+pageNav.fn = null;
+pageNav.pre = "pre";
+pageNav.next = "next";
+var pagesize = 20;
+var _pageindex = 0;
+var _pagecount = 0;
+var _pagesumcount = 0;
+pageNav.nav = function (a, b) {
+    _pagesumcount = b;
+    if (1 &gt;= b) return this.pn = this.p = 1, this.pHtml2(1);
+    b &lt; a &amp;&amp; (a = b); var c = "";
+    1 &gt;= a ? a = 1 : (c += this.pHtml(a - 1, b, pageNav.pre), c += this.pHtml(1, b, "1"));
+    this.p = a;
+    this.pn = b;
+    //这里的e=10表示的是当前显示10个页码，后面的d=a-4和e=a+4表示的是点击...之后每次增加4个页码或减少4个页码
+    var d = 2, e = 10 &gt; b ? b : 10; 7 &lt;= a &amp;&amp; (c += "...", d = a - 4, e = a + 4, e = b &lt; e ? b : e);
+    for (; d &lt; a; d++)
+        c += this.pHtml(d, b);
+    c += this.pHtml2(a);
+    for (d = a + 1; d &lt;= e; d++)
+        c += this.pHtml(d, b);
+    e &lt; b &amp;&amp; (c = c + "..." + this.pHtml(b, b));
+    a &lt; b &amp;&amp; (c += this.pHtml(a + 1, b, pageNav.next));
+    return c;
+};
+pageNav.pHtml = function (a, b, c) {
+    return " &lt;a href='javascript:pageNav.go(" + a + "," + b + ");' class='pageNum'&gt;" + (c || a) + "&lt;/a&gt; "
+};
+pageNav.pHtml2 = function (a) {
+    
+    if (a == 1 &amp;&amp; _pagesumcount==1) {
+        
+        return "";
+    }
+    if (_pagesumcount==0) {
+        return "";
+    }
+  
+    return " &lt;span class='cPageNum'&gt;" + a + "&lt;/span&gt; "
+};
+pageNav.go = function (a, b) {
+   var content= this.nav(a, b);
+   	if(document.getElementsByClassName){
+   		all=document.getElementsByClassName('pageNav');
+   		
+   	}else{
+    	all=getElementsByClassName(document,'pageNav');
+    }
+    for(var i=0;i&lt;all.length;i++){
+    	var one=all[i];
+    	one.innerHTML =content;
+    }
+    null != this.fn &amp;&amp; this.fn(this.p, this.pn);
+};
+
+function getElementsByClassName(node,classname) {
+  if (node.getElementsByClassName) { // use native implementation if available
+    return node.getElementsByClassName(classname);
+  } else {
+    return (function getElementsByClass(searchClass,node) {
+        if ( node == null )
+          node = document;
+        var classElements = [],
+            els = node.getElementsByTagName("*"),
+            elsLen = els.length,
+            pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)"), i, j;
+
+        for (i = 0, j = 0; i &lt; elsLen; i++) {
+          if ( pattern.test(els[i].className) ) {
+              classElements[j] = els[i];
+              j++;
+          }
+        }
+        return classElements;
+    })(classname, node);
+  }
+}
+ 
+//---------
+         
+function LoadNav(sum,smallPageUrl,perCount,contentDomID) {
+            pageNav.pre = '前一页';
+            pageNav.next = '下一页';
+            pageNav.fn = function (currentPageIndex, pageSum) {
+				GetPage(currentPageIndex,smallPageUrl,perCount,contentDomID); 
+			};
+            pageNav.go(1, sum);
+    }
+	
+function GetPage(currentPageIndex,smallPageUrl,perCount,contentDomID) {
+            $.ajax({
+                url: smallPageUrl,
+                async: true,
+				cache: false,
+                data: { pageIndex: currentPageIndex, pageSize: perCount },
+                success: function (html) {
+                    $('#'+contentDomID).html(html);
+                }
+      });
+}	  
+function MoonPager()
+{
+	this.LoadPager= function(sumDataCountUrl,smallPageUrl,perCount,contentDomID) {
+            $.get(sumDataCountUrl,{}, function (ret) {
+                var a = 0;
+                if (ret % perCount == 0) {
+                    a = ret / perCount;
+                } else {
+                    a = Math.floor(ret / perCount) + 1;
+                }
+                LoadNav(a,smallPageUrl,perCount,contentDomID);
+            });
+     }
+}		
+       
+        
+		
+           </value>
+  </data>
+</root>

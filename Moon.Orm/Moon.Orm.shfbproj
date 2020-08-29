@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!--The configuration and platform will be used to determine which
+assemblies to include from solution and project documentation
+sources-->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6087298c-0652-4062-a571-56449e282973}</ProjectGuid>
+    <SHFBSchemaVersion>1.9.9.0</SHFBSchemaVersion>
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <OutputPath>.\Help\</OutputPath>
+    <HtmlHelpName>Moon.Orm旗舰版API帮助文档</HtmlHelpName>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="Moon.Orm.csproj" xmlns="" />
+    </DocumentationSources>
+    <SyntaxFilters>C#, Visual Basic</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <PresentationStyle>VS2005</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>Guid</NamingMethod>
+    <Language>zh-CN</Language>
+    <HelpTitle>Moon.Orm旗舰版API帮助文档</HelpTitle>
+    <FooterText>欢迎加入我们的团队,qq群:225656797</FooterText>
+    <HeaderText>技术咨询: http://www.cnblogs.com/humble/p/3323161.html</HeaderText>
+    <FeedbackEMailLinkText>联系邮箱</FeedbackEMailLinkText>
+    <FeedbackEMailAddress>qsmy_qin%40163.com</FeedbackEMailAddress>
+    <CopyrightHref>http://www.cnblogs.com/humble/category/514359.html</CopyrightHref>
+    <ContentPlacement>BelowNamespaces</ContentPlacement>
+    <RootNamespaceTitle>Moon.Orm 塑造Orm经典.卓越成就经典----便捷、高效、易用</RootNamespaceTitle>
+    <CopyrightText>Moon.Orm旗舰版针对授权用户使用</CopyrightText>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <BuildLogFile>log</BuildLogFile>
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <IndentHtml>False</IndentHtml>
+    <FrameworkVersion>.NET Framework 2.0</FrameworkVersion>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <CppCommentsFixup>False</CppCommentsFixup>
+    <CleanIntermediates>True</CleanIntermediates>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <NamespaceGrouping>True</NamespaceGrouping>
+    <WebsiteSdkLinkType>Msdn</WebsiteSdkLinkType>
+    <HtmlSdkLinkType>Msdn</HtmlSdkLinkType>
+    <IncludeFavorites>False</IncludeFavorites>
+    <BinaryTOC>True</BinaryTOC>
+    <ProjectSummary>&amp;lt%3bbr/&amp;gt%3b
+&amp;lt%3ba href=&amp;quot%3bhttp://www.cnblogs.com/humble/p/www.cnblogs.com/humble/p/www.cnblogs.com/humble/p/3298549.html&amp;quot%3b&amp;gt%3bMoon.Orm 5.0 %28MQL版%29 配置说明&amp;lt%3ba&amp;gt%3b&amp;lt%3bbr/&amp;gt%3b
+注意事项:&amp;lt%3bbr/&amp;gt%3b
+1.在使用Sqlite时,SQLite.Interop.dll需要你手动放入你项目的dll目录中%3b%28因为这是c++生成的%29&amp;lt%3bbr/&amp;gt%3b
+2.在使用mysql时,如果你的系统中已经使用了oracle公司的mysql驱动包,&amp;lt%3bbr/&amp;gt%3b
+就有可能面临一个情况不能正常使用,请进行如下操作.&amp;lt%3bbr/&amp;gt%3b
+&amp;lt%3bsystem.data&amp;gt%3b&amp;lt%3bbr/&amp;gt%3b
+	&amp;lt%3bDbProviderFactories&amp;gt%3b&amp;lt%3bbr/&amp;gt%3b
+	//删除&amp;lt%3badd name=&amp;quot%3bMySQL Data Provider&amp;quot%3b  &amp;lt%3bbr/&amp;gt%3b
+	&amp;lt%3bDbProviderFactories&amp;gt%3b&amp;lt%3bbr/&amp;gt%3b
+&amp;lt%3b/system.data&amp;gt%3b&amp;lt%3bbr/&amp;gt%3b
+3.mysql中,如果插入数据时报如下错误&amp;lt%3bbr/&amp;gt%3b
+重复的主键%28但你本来的没有重复%29,表示你的mysql自己有问题&amp;lt%3bbr/&amp;gt%3b
+:数据库表的索引名字一样了,你重新为此表的索引命名.&amp;lt%3bbr/&amp;gt%3b
+
+一些appsetting配置说明:&amp;lt%3bbr/&amp;gt%3b
+
+1%29MOON_DIRECTORY_PATH&amp;lt%3bbr/&amp;gt%3b
+%28注意最后有一个\%29&amp;lt%3bbr/&amp;gt%3b
+moon.orm的工作目录.如果&amp;lt%3bbr/&amp;gt%3b
+如果为空%28IsNullOrEmpty%29,那么就是程序exe或dll所在的目录.&amp;lt%3bbr/&amp;gt%3b
+如果不为空,则为你所设定的路径%28目录不存在会自动创建的%29&amp;lt%3bbr/&amp;gt%3b&amp;lt%3bbr/&amp;gt%3b
+2%29USE_TEMP_DLL&amp;lt%3bbr/&amp;gt%3b
+希望每次启动的时候,GetDynamicList方法是否使用[上次动态生成好的dll].&amp;lt%3bbr/&amp;gt%3b
+true或者false&amp;lt%3bbr/&amp;gt%3b&amp;lt%3bbr/&amp;gt%3b
+
+
+3%29SQL_XML_FILE_NAME
+表示存放sql语句的xml文件路径.%28可以直接是文件名,这样的话就存放在
+moon.orm工作目录中,为空[IsNullOrEmpty],则默认名为sql.xml%29
+
+</ProjectSummary>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="Moon.Orm" isDocumented="True">所有的常用类都在这里,重点了解Db</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Moon.Orm.Util" isDocumented="True">所有常见的辅助类</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="(global)" isDocumented="True" />
+    </NamespaceSummaries>
+    <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
+  </PropertyGroup>
+  <!--There are no properties for these groups.  AnyCPU needs to appear in
+order for Visual Studio to perform the build.  The others are optional
+common platform types that may appear.-->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Win32' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' " />
+  <!--Import the SHFB build targets-->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

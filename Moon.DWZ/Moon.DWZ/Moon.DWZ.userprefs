@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="ChromeHTML" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Moon.DWZ\Default.aspx">
+    <Files>
+      <File FileName="Moon.DWZ\Default.aspx" Line="3" Column="3" />
+      <File FileName="Moon.DWZ\Global.asax.cs" Line="2" Column="2" />
+      <File FileName="Moon.DWZ\web.config" Line="20" Column="20" />
+      <File FileName="Moon.DWZ\Global.asax" Line="1" Column="1" />
+      <File FileName="Moon.DWZ\dwz\index.html" Line="4" Column="4" />
+      <File FileName="Moon.DWZ\login_dialog.aspx" Line="9" Column="9" />
+      <File FileName="Moon.DWZ\login_dialog.aspx.cs" Line="1" Column="1" />
+      <File FileName="Moon.DWZ\Default.aspx.cs" Line="3" Column="3" />
+      <File FileName="Moon.DWZ\Moon.DWZ.csproj" Line="1" Column="1" />
+      <File FileName="Moon.DWZ\dwz.frag.xml" Line="13" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

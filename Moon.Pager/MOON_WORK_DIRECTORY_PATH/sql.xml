@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<sqls>
+	<sqlxml id="getdemo">
+		<sql><![CDATA[select* from products where ProductId<@]]>></sql>
+		<description>查询用户名(描述信息)</description>
+	</sqlxml>
+</sqls>
