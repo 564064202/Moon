@@ -39,13 +39,26 @@ namespace Moon.Orm
 		{
 			return Path.DirectorySeparatorChar.ToString();
 		}
+		
 		/// <summary>
-		/// 这是一空方法,用户调用时会初始化GlobalData
+		/// 初始化Orm配置
 		/// </summary>
-		public static void Initial(bool isWeb, string dll_exe_directory_path)
+		/// <param name="isWeb">是否是网站</param>
+		/// <param name="dll_exe_directory_path">dll or exe 的路径，包括最后的路径分隔符，默认执行文件的路径</param>
+		public static void Initial(bool isWeb, string dll_exe_directory_path=null)
 		{
 			_isWeb = isWeb;
-			DLL_EXE_DIRECTORY_PATH = dll_exe_directory_path;
+			if (string.IsNullOrEmpty(dll_exe_directory_path))
+			{
+				var path = Assembly.GetEntryAssembly().Location;
+				FileInfo fi = new FileInfo(path);
+				DLL_EXE_DIRECTORY_PATH = fi.Directory.FullName + Path.DirectorySeparatorChar;
+			}
+			else
+			{
+				DLL_EXE_DIRECTORY_PATH = dll_exe_directory_path;
+			}
+			
 			IS_WEB = isWeb;
 
 			OS_SPLIT_STRING =GetOSPathSplit();

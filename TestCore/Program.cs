@@ -9,12 +9,7 @@ namespace TestCore
     {
         static void Main(string[] args)
         {
-            var path = Assembly.GetEntryAssembly().Location;
-            FileInfo fi = new FileInfo(path);
-
-            var path2 = fi.Directory.FullName+Path.DirectorySeparatorChar;
-
-            Moon.Orm.GlobalData.Initial(false, path2);
+            Moon.Orm.GlobalData.Initial(false);
             using (var db=Db.CreateDefaultDb())
             {
                var list= db.ExecuteSqlToJson("select * FROM book");
