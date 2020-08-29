@@ -13,12 +13,11 @@ using System.Windows.Forms;
 using Moon.CodeBuider;
 using Moon.Orm;
 using Moon.Orm.Util;
-using Qios.DevSuite.Components;
-using Qios.DevSuite.Components.Ribbon;
+ 
 
 namespace CodeRobot
 {
-	public partial class frmDbObjects : QRibbonForm
+	public partial class frmDbObjects : Form
 	{
 		public frmDbObjects()
 		{

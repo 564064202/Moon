@@ -37,12 +37,7 @@ namespace Moon.Orm
 		/// <returns>OS_SPLIT_STRING</returns>
 		public static string GetOSPathSplit()
 		{
-			var platform=Environment.OSVersion.Platform.ToString().ToLower();
-			if(platform.Contains("win")){
-				return @"\";
-			}else{
-				return "/";
-			}
+			return Path.DirectorySeparatorChar.ToString();
 		}
 		/// <summary>
 		/// 这是一空方法,用户调用时会初始化GlobalData
@@ -54,9 +49,10 @@ namespace Moon.Orm
 			IS_WEB = isWeb;
 
 			OS_SPLIT_STRING =GetOSPathSplit();
-			MOON_WORK_DIRECTORY_PATH=ConfigurationManager.AppSettings["MOON_WORK_DIRECTORY_PATH"];
-			
-			string useTempDll=ConfigurationManager.AppSettings["USE_TEMP_DLL"];
+			 ConfigurationManager.AppSettings.TryGetValue("MOON_WORK_DIRECTORY_PATH",out MOON_WORK_DIRECTORY_PATH);
+			;
+			string useTempDll;
+			ConfigurationManager.AppSettings.TryGetValue("USE_TEMP_DLL", out useTempDll);
 			if (string.IsNullOrEmpty(useTempDll)==false) {
 				USE_TEMP_DLL=bool.Parse(useTempDll);
 			}else{
@@ -111,7 +107,8 @@ namespace Moon.Orm
 			string dicrectoryName=MOON_TEMP_DLL_DIRECTORY_PATH;
 			IOUtil.CreateDirectoryWhenNotExist(dicrectoryName);
 			DynamicList_HandlerMap=new Dictionary<string, DynamicListHandler>();
-			var close=ConfigurationManager.AppSettings["CLOSE_LOG"];
+			string close;
+			ConfigurationManager.AppSettings.TryGetValue("CLOSE_LOG", out close);
 			if(string.IsNullOrEmpty(close)==false){
 				CLOSE_LOG=bool.Parse(close);
 			}

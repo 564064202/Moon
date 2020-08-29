@@ -36,18 +36,14 @@ namespace CodeRobot
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.qRibbonCaption1 = new Qios.DevSuite.Components.Ribbon.QRibbonCaption();
+		 
 			this.wb1 = new System.Windows.Forms.WebBrowser();
-			((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).BeginInit();
+		 
 			this.SuspendLayout();
 			// 
 			// qRibbonCaption1
 			// 
-			this.qRibbonCaption1.Location = new System.Drawing.Point(0, 0);
-			this.qRibbonCaption1.Name = "qRibbonCaption1";
-			this.qRibbonCaption1.Size = new System.Drawing.Size(516, 28);
-			this.qRibbonCaption1.TabIndex = 2;
-			this.qRibbonCaption1.Text = "txt";
+			 
 			// 
 			// wb1
 			// 
@@ -64,14 +60,14 @@ namespace CodeRobot
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(516, 571);
 			this.Controls.Add(this.wb1);
-			this.Controls.Add(this.qRibbonCaption1);
+		//	this.Controls.Add(this.qRibbonCaption1);
 			this.Name = "FrmWb";
 			this.Text = "txt";
 			this.Load += new System.EventHandler(this.FrmWbLoad);
-			((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).EndInit();
+			//((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).EndInit();
 			this.ResumeLayout(false);
 		}
 		private System.Windows.Forms.WebBrowser wb1;
-		private Qios.DevSuite.Components.Ribbon.QRibbonCaption qRibbonCaption1;
+		 
 	}
 }

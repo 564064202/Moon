@@ -1,6 +1,8 @@
-﻿namespace CodeRobot
+﻿using System.Windows.Forms;
+
+namespace CodeRobot
 {
-    partial class frmDbObjects
+    partial class frmDbObjects: Form
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +34,7 @@
         	System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDbObjects));
         	this.cmsSql = new System.Windows.Forms.ContextMenuStrip(this.components);
         	this.tsmiPaste = new System.Windows.Forms.ToolStripMenuItem();
-        	this.qRibbonCaption1 = new Qios.DevSuite.Components.Ribbon.QRibbonCaption();
+         
         	this.tabPage2 = new System.Windows.Forms.TabPage();
         	this.label2 = new System.Windows.Forms.Label();
         	this.label3 = new System.Windows.Forms.Label();
@@ -52,7 +54,7 @@
         	this.btnCopy = new System.Windows.Forms.Button();
         	this.tabControl1 = new System.Windows.Forms.TabControl();
         	this.cmsSql.SuspendLayout();
-        	((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).BeginInit();
+        	//((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).BeginInit();
         	this.tabPage2.SuspendLayout();
         	this.tabPage1.SuspendLayout();
         	this.tabControl1.SuspendLayout();
@@ -76,11 +78,7 @@
         	// 
         	// qRibbonCaption1
         	// 
-        	this.qRibbonCaption1.Location = new System.Drawing.Point(0, 0);
-        	this.qRibbonCaption1.Name = "qRibbonCaption1";
-        	this.qRibbonCaption1.Size = new System.Drawing.Size(491, 28);
-        	this.qRibbonCaption1.TabIndex = 1;
-        	this.qRibbonCaption1.Text = "qRibbonCaption1";
+         
         	// 
         	// tabPage2
         	// 
@@ -277,7 +275,7 @@
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
         	this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         	this.ClientSize = new System.Drawing.Size(491, 469);
-        	this.Controls.Add(this.qRibbonCaption1);
+        //	this.Controls.Add(this.qRibbonCaption1);
         	this.Controls.Add(this.tabControl1);
         	this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
         	this.Name = "frmDbObjects";
@@ -285,7 +283,7 @@
         	this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDbObjects_FormClosed);
         	this.Load += new System.EventHandler(this.frmDbObjects_Load);
         	this.cmsSql.ResumeLayout(false);
-        	((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).EndInit();
+        	 
         	this.tabPage2.ResumeLayout(false);
         	this.tabPage2.PerformLayout();
         	this.tabPage1.ResumeLayout(false);
@@ -295,7 +293,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiPaste;
         private System.Windows.Forms.ContextMenuStrip cmsSql;
         private System.Windows.Forms.Button btnCopy;
-        private Qios.DevSuite.Components.Ribbon.QRibbonCaption qRibbonCaption1;
+ 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtEntityName;
         private System.Windows.Forms.Label label3;

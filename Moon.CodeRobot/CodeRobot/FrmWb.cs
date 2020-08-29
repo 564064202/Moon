@@ -9,15 +9,14 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
-using Qios.DevSuite.Components.Ribbon;
+ 
 
 namespace CodeRobot
 {
 	/// <summary>
 	/// Description of FrmWb.
 	/// </summary>
-	public partial class FrmWb : QRibbonForm
+	public partial class FrmWb :  Form
 	{
 		public FrmWb()
 		{
@@ -48,9 +47,7 @@ namespace CodeRobot
 			
 		}
 		void SetEnvent(){
-			var axwb= (this.wb1.ActiveXInstance as SHDocVw.WebBrowser);
-			axwb.NewWindow3 += new SHDocVw.DWebBrowserEvents2_NewWindow3EventHandler(Form1_NewWindow3);
-			axwb.Silent=true;
+		 
 		}
 		
 		

@@ -13,12 +13,10 @@ using CodeRobot;
 using Moon.CodeBuider;
 using Moon.LanguageExpert;
 using Moon.Orm;
-using Qios.DevSuite.Components;
-using Qios.DevSuite.Components.Ribbon;
 
 namespace CodeRobot
 {
-	public partial class frmMain : QRibbonForm
+	public partial class frmMain :  Form
 	{
 		string defaultFilePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 		public frmMain()
@@ -338,7 +336,7 @@ namespace CodeRobot
 						db = new SqlServer(strConnection);
 						break;
 					case "mysql":
-						db = new MySql(strConnection);
+						db = new Moon.Orm.MySql(strConnection);
 						break;
 					case "oracle":
 

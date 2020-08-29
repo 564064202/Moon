@@ -93,12 +93,14 @@ namespace Moon.Orm
             get
             {
                 IDictionary<string, ConnectionStringSettings> result = new Dictionary<string, ConnectionStringSettings>();
-                var all = Maps.Where(i => i.Key.StartsWith("ConnectionsStrings:")).ToDictionary(i => i.Key, i => i.Value);
+                var all = Maps.Where(i => i.Key.StartsWith("ConnectionStrings:")).ToDictionary(i => i.Key, i => i.Value);
                 foreach (var item in all)
                 {
+                    if (item.Value == null)
+                        continue;
                     var jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject<ConnectionStringSettings>(item.Value);
-                    jsonObj.Name = item.Key;
-                    result[item.Key] = jsonObj;
+                    jsonObj.Name = item.Key.Replace("ConnectionStrings:","");
+                    result[jsonObj.Name] = jsonObj;
                 }
                 return result;
 

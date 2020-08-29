@@ -51,7 +51,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnTest = new System.Windows.Forms.Button();
-            this.qRibbonCaption1 = new Qios.DevSuite.Components.Ribbon.QRibbonCaption();
+           
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblLinkBlog = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -64,7 +64,7 @@
             this.chkItem = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).BeginInit();
+      
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -286,11 +286,7 @@
             // 
             // qRibbonCaption1
             // 
-            this.qRibbonCaption1.Location = new System.Drawing.Point(0, 0);
-            this.qRibbonCaption1.Name = "qRibbonCaption1";
-            this.qRibbonCaption1.Size = new System.Drawing.Size(448, 28);
-            this.qRibbonCaption1.TabIndex = 23;
-            this.qRibbonCaption1.Text = "Moon.Orm开发平台";
+          
             // 
             // statusStrip1
             // 
@@ -383,7 +379,7 @@
             this.Controls.Add(this.chkItem);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.qRibbonCaption1);
+           
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
@@ -399,7 +395,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).EndInit();
+          //  ((System.ComponentModel.ISupportInitialize)(this.qRibbonCaption1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -415,7 +411,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel tsslblLinkBlog;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private Qios.DevSuite.Components.Ribbon.QRibbonCaption qRibbonCaption1;
+      
 
         #endregion
 

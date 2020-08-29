@@ -4,7 +4,7 @@ using System.Drawing;
  
 using System.Windows.Forms;
 
-using Qios.DevSuite.Components;
+ 
 
 namespace CodeRobot
 {
@@ -18,18 +18,7 @@ namespace CodeRobot
         {
            Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			QGlobalFont.Instance.InheritFromWindows = false;
-			try
-			{
-				FontFamily family = new FontFamily("Segoe UI");
-				QGlobalFont.Instance.Font = new Font(family, 9f);
-			}
-			catch
-			{
-				QGlobalFont.Instance.Font = new Font("Tahoma", 8.25f);
-			}
-			QColorScheme.Global.InheritCurrentThemeFromWindows = true;
-			QColorScheme.Global.CurrentTheme = "LunaBlue";
+ 
 			Application.Run(new frmMain());
         }
     }
