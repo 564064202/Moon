@@ -10,9 +10,11 @@ namespace TestCore
         static void Main(string[] args)
         {
             Moon.Orm.GlobalData.Initial(false);
-            using (var db=Db.CreateDefaultDb())
+            using (var db = Db.CreateDefaultDb())
             {
-               var list= db.ExecuteSqlToJson("select * FROM book");
+                var sql = "select* FROM book";
+                var model = db.GetModelBySql(sql,"Book");
+                var list = db.ExecuteSqlToOwnList<moontemp.Book>(sql);
                 Console.WriteLine(list);
             }
             Console.WriteLine("Hello World!");

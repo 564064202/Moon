@@ -96,7 +96,7 @@ namespace Moon.Orm
 			code.AppendLine("using System.Data.Common;");
 			code.AppendLine("using System.Text;");
 			code.AppendLine("using Moon.Orm;");
-			code.AppendLine("using System.Configuration;");
+			//code.AppendLine("using System.Configuration;");
 			code.AppendLine("namespace moontemp{");//1
 			code.AppendLine("public class "+modelName+" {");//2
 			int index=0;
@@ -204,7 +204,7 @@ namespace Moon.Orm
 			cp.TreatWarningsAsErrors = false;
 			
 			string root=GlobalData.DLL_EXE_DIRECTORY_PATH;
-			cp.ReferencedAssemblies.Add( root+"Moon.Orm.dll" );
+			cp.ReferencedAssemblies.Add( root+"Moon.OrmCore.dll" );
 			cp.ReferencedAssemblies.Add( "System.Data.dll" );
 			if (strArray!=null) {
 				cp.ReferencedAssemblies.AddRange(strArray);
