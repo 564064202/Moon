@@ -9,7 +9,8 @@ namespace TestCore
     {
         static void Main(string[] args)
         {
-            Moon.Orm.GlobalData.Initial(false);
+            // Moon.Orm.GlobalData.Initial(false);
+            Console.WriteLine(GlobalData.IS_WEB);
             using (var db = Db.CreateDefaultDb())
             {
                 var sql = "select* FROM book";
