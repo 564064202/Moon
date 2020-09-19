@@ -77,10 +77,8 @@ namespace Moon.Orm
             IS_WEB = isWeb;
 
             OS_SPLIT_STRING = GetOSPathSplit();
-            ConfigurationManager.AppSettings.TryGetValue("MOON_WORK_DIRECTORY_PATH", out MOON_WORK_DIRECTORY_PATH);
-            ;
-            string useTempDll;
-            ConfigurationManager.AppSettings.TryGetValue("USE_TEMP_DLL", out useTempDll);
+            MOON_WORK_DIRECTORY_PATH = ConfigurationManager.AppSettings["MOON_WORK_DIRECTORY_PATH"];
+            string useTempDll = ConfigurationManager.AppSettings["USE_TEMP_DLL"];
             if (string.IsNullOrEmpty(useTempDll) == false)
             {
                 USE_TEMP_DLL = bool.Parse(useTempDll);
@@ -143,8 +141,7 @@ namespace Moon.Orm
             string dicrectoryName = MOON_TEMP_DLL_DIRECTORY_PATH;
             IOUtil.CreateDirectoryWhenNotExist(dicrectoryName);
             DynamicList_HandlerMap = new Dictionary<string, DynamicListHandler>();
-            string close;
-            ConfigurationManager.AppSettings.TryGetValue("CLOSE_LOG", out close);
+            string close=ConfigurationManager.AppSettings["CLOSE_LOG"];
             if (string.IsNullOrEmpty(close) == false)
             {
                 CLOSE_LOG = bool.Parse(close);

@@ -2,6 +2,8 @@
 using System.IO;
 using System.Reflection;
 using Moon.Orm;
+using moontemp;
+using sqlite;
 
 namespace TestCore
 {
@@ -19,7 +21,27 @@ namespace TestCore
                 Console.WriteLine(list);
             }
             Console.WriteLine("Hello World!");
+            TestSqlite();
             Console.ReadLine();
+        }
+
+        static void TestSqlite()
+        {
+            using (var db = Db.CreateDbByConfigName("sqlite_test"))
+            {
+                
+                var list = db.GetEntities<User>(UserSet.SelectAll()).FindLast(m=>m.Id>0).Name;
+                Console.WriteLine(list);
+
+                var id = db.GetScalarToMObject(UserSet.Select(UserSet.Id.Max())).To<Int64>();
+                User user = new User();
+                user.Age = id+1;
+                user.Name = "Name"+user.Age;
+                db.Add(user);
+
+                Console.WriteLine(user.Id);
+                 
+            }
         }
     }
 }

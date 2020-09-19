@@ -9,7 +9,6 @@
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -163,7 +162,7 @@ namespace Moon.Orm
 					}
 				}
 			}
-			if (_DefaultEngineDLLName=="Moon.Orm.dll") {
+			if (_DefaultEngineDLLName=="Moon.OrmCore.dll") {
 				if (_DefaultEngineFullTypeName=="Moon.Orm.SqlServer") {
 					return new SqlServer(_DefaultEngineDbConnectionString);
 				}
